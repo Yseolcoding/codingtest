@@ -12,8 +12,6 @@ public class Solution {
             int k = n%10;
             answer += k;
             n = n/10;
-        System.out.println(n);
-        System.out.println(k);
         }
 
 
