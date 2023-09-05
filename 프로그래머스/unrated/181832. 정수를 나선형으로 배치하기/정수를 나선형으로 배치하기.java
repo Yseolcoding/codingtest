@@ -19,7 +19,6 @@ class Solution {
             int ny = y+dy[d];
             
             if(ny < 0 || ny >=n || nx<0 || nx>=n||answer[nx][ny]!=0) {
-         // if(ny>=n || nx>=n || ny<0 || nx<0 || answer[n
                 d = (d+1)%4;
                 nx = x + dx[d];
                 ny = y + dy[d];
