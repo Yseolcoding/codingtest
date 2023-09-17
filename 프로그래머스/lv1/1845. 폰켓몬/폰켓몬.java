@@ -3,14 +3,12 @@ import java.util.*;
 class Solution {
     public int solution(int[] nums) {
         int answer = 0;
-        String key;
         int length = nums.length/2;
-        HashMap<String,String> pkm = new HashMap<String,String>();
+        HashMap<Integer,Integer> pkm = new HashMap<Integer,Integer>();
         
         for(int i=0; i<nums.length; i++){
             if(!pkm.containsKey(nums[i])){
-                key = Integer.toString(nums[i]);
-                pkm.put(key, null);
+                pkm.put(nums[i], null);
             }
         }
         
